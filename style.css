@@ -10,6 +10,9 @@ body {
 .wrapper {
   width: 80%;
   margin: 5% auto;
+  color: red;
+  font-size: 30px;
+  background: gray;
 }
 
 /*# sourceMappingURL=style.css.map */
