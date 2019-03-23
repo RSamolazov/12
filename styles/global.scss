@@ -1,3 +1,4 @@
+$color: green;
 body{
     background-color: darkgrey;
     margin: 0;
@@ -8,7 +9,20 @@ body{
 .wrapper{
     width: 80%;
     margin: 5% auto;
-    color: red;
+    color:$color;
     font-size: 30px;
     background: gray;
+}
+@mixin radius ($x) {
+    -webkit-border-radius:$x;
+    -moz-border-radius:$x;
+    border-radius:$x;
+    
+}
+div{
+    @include radius(10px);
+}
+.without-BEM{
+    @extend .wrapper ;
+    background-color: darkolivegreen;
 }

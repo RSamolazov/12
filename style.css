@@ -7,12 +7,36 @@ body {
   font-size: 10px;
 }
 
-.wrapper {
+.wrapper, .without-BEM {
   width: 80%;
   margin: 5% auto;
-  color: red;
+  color: green;
   font-size: 30px;
   background: gray;
+}
+
+div {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.without-BEM {
+  background-color: darkolivegreen;
+}
+
+.header {
+  color: red;
+}
+.header .header-list {
+  font-size: 40px;
+}
+.header .header-list li {
+  padding: 5px;
+}
+
+input:focus {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
